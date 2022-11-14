@@ -7734,7 +7734,7 @@ __webpack_require__.r(__webpack_exports__);
   }, {
     title: 'Second Page',
     route: 'second-page',
-    icon: 'FileIcon'
+    icon: 'TagIcon'
   }]
 }]);
 

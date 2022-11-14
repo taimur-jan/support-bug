@@ -11,7 +11,7 @@ export default [
       {
         title: 'Second Page',
         route: 'second-page',
-        icon: 'FileIcon',
+        icon: 'TagIcon',
       },
     ],
   },
