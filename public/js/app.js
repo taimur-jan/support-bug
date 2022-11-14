@@ -3191,7 +3191,7 @@ var $themeConfig = {
     },
     navbar: {
       // ? For horizontal menu, navbar type will work for navMenu type
-      type: 'floating',
+      type: 'sticky',
       // static , sticky , floating, hidden
       backgroundColor: '' // BS color options [primary, success, etc]
     },
