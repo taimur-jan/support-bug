@@ -9,7 +9,7 @@ export default [
         icon: 'HomeIcon',
       },
       {
-        title: 'Second Page',
+        title: 'Case History',
         route: 'second-page',
         icon: 'TagIcon',
       },

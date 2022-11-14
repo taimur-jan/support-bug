@@ -7732,7 +7732,7 @@ __webpack_require__.r(__webpack_exports__);
     route: 'home',
     icon: 'HomeIcon'
   }, {
-    title: 'Second Page',
+    title: 'Case History',
     route: 'second-page',
     icon: 'TagIcon'
   }]
