@@ -4896,7 +4896,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/components/dropdown/dropdown-item.js");
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/components/dropdown/dropdown-divider.js");
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/components/avatar/avatar.js");
-/* harmony import */ var _core_layouts_components_app_navbar_components_DarkToggler_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../@core/layouts/components/app-navbar/components/DarkToggler.vue */ "./resources/js/src/@core/layouts/components/app-navbar/components/DarkToggler.vue");
+/* harmony import */ var _core_layouts_components_app_navbar_components_DarkToggler_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/layouts/components/app-navbar/components/DarkToggler.vue */ "./resources/js/src/@core/layouts/components/app-navbar/components/DarkToggler.vue");
 //
 //
 //
@@ -23165,30 +23165,14 @@ var render = function () {
           "b-link",
           {
             staticClass: "ml-25",
-            attrs: {
-              href: "https://1.envato.market/pixinvent_portfolio",
-              target: "_blank",
-            },
+            attrs: { href: "https://www.supportbug.com", target: "_blank" },
           },
-          [_vm._v("Pixinvent")]
+          [_vm._v("Support Bug")]
         ),
         _vm._v(" "),
         _c("span", { staticClass: "d-none d-sm-inline-block" }, [
           _vm._v(", All rights Reserved"),
         ]),
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "span",
-      { staticClass: "float-md-right d-none d-md-block" },
-      [
-        _vm._v("Hand-crafted & Made with\n    "),
-        _c("feather-icon", {
-          staticClass: "text-danger stroke-current",
-          attrs: { icon: "HeartIcon", size: "21" },
-        }),
       ],
       1
     ),

@@ -99,7 +99,7 @@
 import {
   BLink, BNavbarNav, BNavItemDropdown, BDropdownItem, BDropdownDivider, BAvatar,
 } from 'bootstrap-vue'
-import DarkToggler from './../../@core/layouts/components/app-navbar/components/DarkToggler.vue'
+import DarkToggler from '@core/layouts/components/app-navbar/components/DarkToggler.vue'
 
 export default {
   components: {
