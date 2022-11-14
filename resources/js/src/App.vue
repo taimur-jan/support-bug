@@ -14,18 +14,18 @@
 <script>
 
 // This will be populated in `beforeCreate` hook
-import { $themeColors, $themeBreakpoints, $themeConfig } from './../themeConfig'
+import { $themeColors, $themeBreakpoints, $themeConfig } from '@themeConfig'
 import { provideToast } from 'vue-toastification/composition'
 import { watch } from '@vue/composition-api'
-import useAppConfig from './@core/app-config/useAppConfig'
+import useAppConfig from '@core/app-config/useAppConfig'
 
 import { useWindowSize, useCssVar } from '@vueuse/core'
 
-import store from './store'
+import store from '@/store'
 
-const LayoutVertical = () => import('./layouts/vertical/LayoutVertical.vue')
-const LayoutHorizontal = () => import('./layouts/horizontal/LayoutHorizontal.vue')
-const LayoutFull = () => import('./layouts/full/LayoutFull.vue')
+const LayoutVertical = () => import('@/layouts/vertical/LayoutVertical.vue')
+const LayoutHorizontal = () => import('@/layouts/horizontal/LayoutHorizontal.vue')
+const LayoutFull = () => import('@/layouts/full/LayoutFull.vue')
 
 export default {
   components: {

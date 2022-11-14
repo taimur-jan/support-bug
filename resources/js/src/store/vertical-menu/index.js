@@ -1,4 +1,4 @@
-import { $themeConfig } from './../../../themeConfig'
+import { $themeConfig } from '@themeConfig'
 
 export default {
   namespaced: true,

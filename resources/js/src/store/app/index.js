@@ -1,4 +1,4 @@
-import { $themeBreakpoints } from './../../../themeConfig'
+import { $themeBreakpoints } from '@themeConfig'
 
 export default {
   namespaced: true,

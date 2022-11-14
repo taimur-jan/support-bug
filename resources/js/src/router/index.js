@@ -12,27 +12,27 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/Home.vue'),
+      name: 'dashboard',
+      component: () => import('@/views/Dashboard.vue'),
       meta: {
         pageTitle: 'Dashboard',
         breadcrumb: [
           {
-            text: 'Home',
+            text: 'Dashboard',
             active: true,
           },
         ],
       },
     },
     {
-      path: '/second-page',
-      name: 'second-page',
-      component: () => import('@/views/SecondPage.vue'),
+      path: '/case-history',
+      name: 'case-history',
+      component: () => import('@/views/CaseHistory.vue'),
       meta: {
-        pageTitle: 'Case',
+        pageTitle: 'Case History',
         breadcrumb: [
           {
-            text: 'Second Page',
+            text: 'Case History',
             active: true,
           },
         ],
