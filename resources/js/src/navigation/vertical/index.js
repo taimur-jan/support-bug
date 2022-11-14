@@ -7,6 +7,6 @@ export default [
   {
     title: 'Case History',
     route: 'case-history',
-    icon: 'FileIcon',
+    icon: 'TagIcon',
   },
 ]
