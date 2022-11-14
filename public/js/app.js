@@ -3169,7 +3169,7 @@ var $themeBreakpoints = {};
 // APP CONFIG
 var $themeConfig = {
   app: {
-    appName: 'Vuexy',
+    appName: 'Supportbug',
     // Will update name in navigation menu (Branding)
     // eslint-disable-next-line global-require
     appLogoImage: __webpack_require__(/*! ./src/assets/images/logo/logo.svg */ "./resources/js/src/assets/images/logo/logo.svg") // Will update logo in navigation menu (Branding)

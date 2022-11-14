@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import LayoutHorizontal from './../../@core/layouts/layout-horizontal/LayoutHorizontal.vue'
+import LayoutHorizontal from '@core/layouts/layout-horizontal/LayoutHorizontal.vue'
 // import AppCustomizer from '@core/layouts/components/app-customizer/AppCustomizer.vue'
 // import { $themeConfig } from '@themeConfig'
-import AppNavbarHorizontalLayoutBrand from './../../@core/layouts/components/app-navbar/AppNavbarHorizontalLayoutBrand.vue'
+import AppNavbarHorizontalLayoutBrand from '@core/layouts/components/app-navbar/AppNavbarHorizontalLayoutBrand.vue'
 import Navbar from '../components/Navbar.vue'
 
 export default {
