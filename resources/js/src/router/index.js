@@ -15,7 +15,7 @@ const router = new VueRouter({
       name: 'home',
       component: () => import('@/views/Home.vue'),
       meta: {
-        pageTitle: 'Home',
+        pageTitle: 'Dashboard',
         breadcrumb: [
           {
             text: 'Home',
@@ -29,7 +29,7 @@ const router = new VueRouter({
       name: 'second-page',
       component: () => import('@/views/SecondPage.vue'),
       meta: {
-        pageTitle: 'Second Page',
+        pageTitle: 'Case',
         breadcrumb: [
           {
             text: 'Second Page',
@@ -61,6 +61,11 @@ const router = new VueRouter({
   ],
 })
 
+router.beforeEach((toRoute, fromRoute, next) => {
+    window.document.title = toRoute.meta && toRoute.meta.pageTitle ? toRoute.meta.pageTitle : 'Supportbug';
+
+    next();
+  })
 // ? For splash screen
 // Remove afterEach hook if you are not using splash screen
 router.afterEach(() => {

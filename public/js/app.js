@@ -2909,7 +2909,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       return __webpack_require__.e(/*! import() */ "resources_js_src_views_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Home.vue */ "./resources/js/src/views/Home.vue"));
     },
     meta: {
-      pageTitle: 'Home',
+      pageTitle: 'Dashboard',
       breadcrumb: [{
         text: 'Home',
         active: true
@@ -2922,7 +2922,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
       return __webpack_require__.e(/*! import() */ "resources_js_src_views_SecondPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/SecondPage.vue */ "./resources/js/src/views/SecondPage.vue"));
     },
     meta: {
-      pageTitle: 'Second Page',
+      pageTitle: 'Case',
       breadcrumb: [{
         text: 'Second Page',
         active: true
@@ -2951,7 +2951,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     redirect: 'error-404'
   }]
 });
-
+router.beforeEach(function (toRoute, fromRoute, next) {
+  window.document.title = toRoute.meta && toRoute.meta.pageTitle ? toRoute.meta.pageTitle : 'Supportbug';
+  next();
+});
 // ? For splash screen
 // Remove afterEach hook if you are not using splash screen
 router.afterEach(function () {
