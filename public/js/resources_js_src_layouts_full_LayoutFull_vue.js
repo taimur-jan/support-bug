@@ -42,7 +42,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _core_layouts_layout_full_LayoutFull_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../@core/layouts/layout-full/LayoutFull.vue */ "./resources/js/src/@core/layouts/layout-full/LayoutFull.vue");
+/* harmony import */ var _core_layouts_layout_full_LayoutFull_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/layouts/layout-full/LayoutFull.vue */ "./resources/js/src/@core/layouts/layout-full/LayoutFull.vue");
 //
 //
 //

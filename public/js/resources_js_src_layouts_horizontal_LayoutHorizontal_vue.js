@@ -7752,11 +7752,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
-  title: 'Home',
+  title: 'Dashboard',
   route: 'home',
   icon: 'HomeIcon'
 }, {
-  title: 'Second Page',
+  title: 'Random Page',
   route: 'second-page',
   icon: 'FileIcon'
 }]);
@@ -25797,7 +25797,7 @@ var render = function () {
                           size: "40",
                           variant: "light-primary",
                           badge: "",
-                          src: __webpack_require__(/*! ./../../assets/images/avatars/13-small.png */ "./resources/js/src/assets/images/avatars/13-small.png"),
+                          src: __webpack_require__(/*! @/assets/images/avatars/13-small.png */ "./resources/js/src/assets/images/avatars/13-small.png"),
                           "badge-variant": "success",
                         },
                       }),

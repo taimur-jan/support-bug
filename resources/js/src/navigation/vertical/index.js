@@ -1,11 +1,11 @@
 export default [
   {
-    title: 'Home',
+    title: 'Dashboard',
     route: 'home',
     icon: 'HomeIcon',
   },
   {
-    title: 'Second Page',
+    title: 'Random Page',
     route: 'second-page',
     icon: 'FileIcon',
   },

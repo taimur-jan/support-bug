@@ -2906,7 +2906,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/',
     name: 'home',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_src_views_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./../views/Home.vue */ "./resources/js/src/views/Home.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_src_views_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Home.vue */ "./resources/js/src/views/Home.vue"));
     },
     meta: {
       pageTitle: 'Home',
@@ -2919,7 +2919,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/second-page',
     name: 'second-page',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_src_views_SecondPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./../views/SecondPage.vue */ "./resources/js/src/views/SecondPage.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_src_views_SecondPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/SecondPage.vue */ "./resources/js/src/views/SecondPage.vue"));
     },
     meta: {
       pageTitle: 'Second Page',
@@ -2932,7 +2932,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/login',
     name: 'login',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_src_views_Login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./../views/Login.vue */ "./resources/js/src/views/Login.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_src_views_Login_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Login.vue */ "./resources/js/src/views/Login.vue"));
     },
     meta: {
       layout: 'full'
@@ -2941,7 +2941,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/error-404',
     name: 'error-404',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_src_views_error_Error404_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./../views/error/Error404.vue */ "./resources/js/src/views/error/Error404.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_src_views_error_Error404_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/error/Error404.vue */ "./resources/js/src/views/error/Error404.vue"));
     },
     meta: {
       layout: 'full'
@@ -2976,7 +2976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _themeConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../../themeConfig */ "./resources/js/themeConfig.js");
+/* harmony import */ var _themeConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @themeConfig */ "./resources/js/themeConfig.js");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   namespaced: true,
