@@ -6806,6 +6806,10 @@ __webpack_require__.r(__webpack_exports__);
   title: 'Case History',
   route: 'case-history',
   icon: 'TagIcon'
+}, {
+  title: 'Knowledge Base',
+  route: 'knowledge-base',
+  icon: 'SearchIcon'
 }]);
 
 /***/ }),

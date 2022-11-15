@@ -13,6 +13,11 @@ export default [
         route: 'second-page',
         icon: 'TagIcon',
       },
+      {
+        title: 'Knowledge Base',
+        route: 'knowledge-base',
+        icon: 'SearchIcon',
+      },
     ],
   },
 ]

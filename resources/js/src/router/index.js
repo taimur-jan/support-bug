@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+
+//routes
+import kb from './routes/knowledgebase'
+
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -38,6 +43,7 @@ const router = new VueRouter({
         ],
       },
     },
+    ...kb,
     {
       path: '/login',
       name: 'login',
