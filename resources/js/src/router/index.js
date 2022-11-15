@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 
 //routes
 import kb from './routes/knowledgebase'
+import cases from './routes/case'
 
 
 Vue.use(VueRouter)
@@ -29,20 +30,7 @@ const router = new VueRouter({
         ],
       },
     },
-    {
-      path: '/case-history',
-      name: 'case-history',
-      component: () => import('@/views/CaseHistory.vue'),
-      meta: {
-        pageTitle: 'Case History',
-        breadcrumb: [
-          {
-            text: 'Case History',
-            active: true,
-          },
-        ],
-      },
-    },
+    ...cases,
     ...kb,
     {
       path: '/login',

@@ -7725,21 +7725,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
+  title: 'Dashboard',
+  route: 'dashboard',
+  icon: 'HomeIcon'
+}, {
+  title: 'Case History',
+  route: 'support-cases',
+  icon: 'TagIcon'
+}, {
+  title: 'Knowledge Base',
+  route: 'knowledge-base',
+  icon: 'SearchIcon'
+}, {
   header: 'Pages',
   icon: 'FileIcon',
-  children: [{
-    title: 'Home',
-    route: 'home',
-    icon: 'HomeIcon'
-  }, {
-    title: 'Case History',
-    route: 'second-page',
-    icon: 'TagIcon'
-  }, {
-    title: 'Knowledge Base',
-    route: 'knowledge-base',
-    icon: 'SearchIcon'
-  }]
+  children: []
 }]);
 
 /***/ }),
@@ -7761,7 +7761,7 @@ __webpack_require__.r(__webpack_exports__);
   icon: 'HomeIcon'
 }, {
   title: 'Case History',
-  route: 'case-history',
+  route: 'support-cases',
   icon: 'TagIcon'
 }, {
   title: 'Knowledge Base',

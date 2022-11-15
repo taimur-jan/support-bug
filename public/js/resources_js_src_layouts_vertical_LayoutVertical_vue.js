@@ -6804,7 +6804,7 @@ __webpack_require__.r(__webpack_exports__);
   icon: 'HomeIcon'
 }, {
   title: 'Case History',
-  route: 'case-history',
+  route: 'support-cases',
   icon: 'TagIcon'
 }, {
   title: 'Knowledge Base',

@@ -6,7 +6,7 @@ export default [
   },
   {
     title: 'Case History',
-    route: 'case-history',
+    route: 'support-cases',
     icon: 'TagIcon',
   },
   {

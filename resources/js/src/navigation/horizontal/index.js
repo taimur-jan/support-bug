@@ -1,23 +1,24 @@
 export default [
-  {
-    header: 'Pages',
-    icon: 'FileIcon',
-    children: [
-      {
-        title: 'Home',
-        route: 'home',
+    {
+        title: 'Dashboard',
+        route: 'dashboard',
         icon: 'HomeIcon',
-      },
-      {
+    },
+    {
         title: 'Case History',
-        route: 'second-page',
+        route: 'support-cases',
         icon: 'TagIcon',
-      },
-      {
+    },
+    {
         title: 'Knowledge Base',
         route: 'knowledge-base',
         icon: 'SearchIcon',
-      },
-    ],
+    },
+    {
+        header: 'Pages',
+        icon: 'FileIcon',
+        children: [
+
+        ],
   },
 ]
