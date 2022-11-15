@@ -2,15 +2,16 @@
     <section id="dashboard-analytics">
       <b-row class="match-height">
         <b-col
-          lg="3"
-          sm="6"
+          lg="6"
+          sm="12"
         >
           <statistic-card-with-area-chart
-            v-if="data.subscribersGained"
+            v-if="data.openTickets"
             icon="UsersIcon"
-            :statistic="kFormatter(data.subscribersGained.analyticsData.subscribers)"
-            statistic-title="Subscribers Gained"
-            :chart-data="data.subscribersGained.series"
+            color="danger"
+            :statistic="kFormatter(data.openTickets.analyticsData.tickets)"
+            statistic-title="Open Tickets"
+            :chart-data="data.openTickets.series"
           />
         </b-col>
         <b-col
@@ -18,12 +19,24 @@
           sm="6"
         >
           <statistic-card-with-area-chart
-            v-if="data.ordersRecevied"
+            v-if="data.totalTickets"
+            icon="UsersIcon"
+            :statistic="kFormatter(data.totalTickets.analyticsData.tickets)"
+            statistic-title="Total Tickets"
+            :chart-data="data.totalTickets.series"
+          />
+        </b-col>
+        <b-col
+          lg="3"
+          sm="6"
+        >
+          <statistic-card-with-area-chart
+            v-if="data.closeTickets"
             icon="PackageIcon"
             color="warning"
-            :statistic="kFormatter(data.ordersRecevied.analyticsData.orders)"
-            statistic-title="Orders Received"
-            :chart-data="data.ordersRecevied.series"
+            :statistic="kFormatter(data.closeTickets.analyticsData.tickets)"
+            statistic-title="Close Tickets"
+            :chart-data="data.closeTickets.series"
           />
         </b-col>
       </b-row>
@@ -72,26 +85,37 @@
     data() {
       return {
         data: {
-  subscribersGained: {
+  totalTickets: {
     series: [
       {
-        name: 'Subscribers',
+        name: 'tickets',
         data: [28, 40, 36, 52, 38, 60, 55],
       },
     ],
     analyticsData: {
-      subscribers: 92600,
+      tickets: 92600,
     },
   },
-  ordersRecevied: {
+  openTickets: {
     series: [
       {
-        name: 'Orders',
+        name: 'tickets',
+        data: [30, 10, 40, 0 , 8, 50 , 10],
+      },
+    ],
+    analyticsData: {
+      tickets: 54200,
+    },
+  },
+  closeTickets: {
+    series: [
+      {
+        name: 'tickets',
         data: [10, 15, 8, 15, 7, 12, 8],
       },
     ],
     analyticsData: {
-      orders: 38400,
+      tickets: 38400,
     },
   },
   avgSessions: {
@@ -166,27 +190,6 @@
         name: 'Visit',
         data: [70, 75, 70, 76, 20, 85],
       },
-    ],
-  },
-  appDesign: {
-    date: '03 Sep, 20',
-    title: 'App design',
-    subtitle: 'You can Find Only Post and Quotes Related to IOS like ipad app design, iphone app design',
-    teams: [
-      { name: 'Figma', color: 'light-warning' },
-      { name: 'Wireframe', color: 'light-primary' },
-    ],
-    members: [
-      { img: require('@/assets/images/portrait/small/avatar-s-9.jpg'), color: 'primary' },
-      { text: 'PI', color: 'light-danger' },
-      { img: require('@/assets/images/portrait/small/avatar-s-14.jpg'), color: 'primary' },
-      { img: require('@/assets/images/portrait/small/avatar-s-7.jpg'), color: 'primary' },
-      { text: 'AL', color: 'light-secondary' },
-    ],
-    planing: [
-      { title: 'Due Date', subtitle: '12 Apr, 21' },
-      { title: 'Budget', subtitle: '$49251.91' },
-      { title: 'Cost', subtitle: '$840.99' },
     ],
   },
 },

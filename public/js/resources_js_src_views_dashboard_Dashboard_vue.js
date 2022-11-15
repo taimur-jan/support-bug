@@ -302,6 +302,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -323,22 +336,31 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       data: {
-        subscribersGained: {
+        totalTickets: {
           series: [{
-            name: 'Subscribers',
+            name: 'tickets',
             data: [28, 40, 36, 52, 38, 60, 55]
           }],
           analyticsData: {
-            subscribers: 92600
+            tickets: 92600
           }
         },
-        ordersRecevied: {
+        openTickets: {
           series: [{
-            name: 'Orders',
+            name: 'tickets',
+            data: [30, 10, 40, 0, 8, 50, 10]
+          }],
+          analyticsData: {
+            tickets: 54200
+          }
+        },
+        closeTickets: {
+          series: [{
+            name: 'tickets',
             data: [10, 15, 8, 15, 7, 12, 8]
           }],
           analyticsData: {
-            orders: 38400
+            tickets: 38400
           }
         },
         avgSessions: {
@@ -417,44 +439,6 @@ __webpack_require__.r(__webpack_exports__);
           }, {
             name: 'Visit',
             data: [70, 75, 70, 76, 20, 85]
-          }]
-        },
-        appDesign: {
-          date: '03 Sep, 20',
-          title: 'App design',
-          subtitle: 'You can Find Only Post and Quotes Related to IOS like ipad app design, iphone app design',
-          teams: [{
-            name: 'Figma',
-            color: 'light-warning'
-          }, {
-            name: 'Wireframe',
-            color: 'light-primary'
-          }],
-          members: [{
-            img: __webpack_require__(/*! @/assets/images/portrait/small/avatar-s-9.jpg */ "./resources/js/src/assets/images/portrait/small/avatar-s-9.jpg"),
-            color: 'primary'
-          }, {
-            text: 'PI',
-            color: 'light-danger'
-          }, {
-            img: __webpack_require__(/*! @/assets/images/portrait/small/avatar-s-14.jpg */ "./resources/js/src/assets/images/portrait/small/avatar-s-14.jpg"),
-            color: 'primary'
-          }, {
-            img: __webpack_require__(/*! @/assets/images/portrait/small/avatar-s-7.jpg */ "./resources/js/src/assets/images/portrait/small/avatar-s-7.jpg"),
-            color: 'primary'
-          }, {
-            text: 'AL',
-            color: 'light-secondary'
-          }],
-          planing: [{
-            title: 'Due Date',
-            subtitle: '12 Apr, 21'
-          }, {
-            title: 'Budget',
-            subtitle: '$49251.91'
-          }, {
-            title: 'Cost',
-            subtitle: '$840.99'
           }]
         }
       }
@@ -9322,16 +9306,6 @@ module.exports = "/images/json.png?2a93cada8b4d34188d51520229982043";
 
 /***/ }),
 
-/***/ "./resources/js/src/assets/images/portrait/small/avatar-s-14.jpg":
-/*!***********************************************************************!*\
-  !*** ./resources/js/src/assets/images/portrait/small/avatar-s-14.jpg ***!
-  \***********************************************************************/
-/***/ ((module) => {
-
-module.exports = "/images/avatar-s-14.jpg?ea440a6ac6c9732b13e3361ee2391a60";
-
-/***/ }),
-
 /***/ "./resources/js/src/assets/images/portrait/small/avatar-s-20.jpg":
 /*!***********************************************************************!*\
   !*** ./resources/js/src/assets/images/portrait/small/avatar-s-20.jpg ***!
@@ -13154,17 +13128,18 @@ var render = function () {
         [
           _c(
             "b-col",
-            { attrs: { lg: "3", sm: "6" } },
+            { attrs: { lg: "6", sm: "12" } },
             [
-              _vm.data.subscribersGained
+              _vm.data.openTickets
                 ? _c("statistic-card-with-area-chart", {
                     attrs: {
                       icon: "UsersIcon",
+                      color: "danger",
                       statistic: _vm.kFormatter(
-                        _vm.data.subscribersGained.analyticsData.subscribers
+                        _vm.data.openTickets.analyticsData.tickets
                       ),
-                      "statistic-title": "Subscribers Gained",
-                      "chart-data": _vm.data.subscribersGained.series,
+                      "statistic-title": "Open Tickets",
+                      "chart-data": _vm.data.openTickets.series,
                     },
                   })
                 : _vm._e(),
@@ -13176,16 +13151,36 @@ var render = function () {
             "b-col",
             { attrs: { lg: "3", sm: "6" } },
             [
-              _vm.data.ordersRecevied
+              _vm.data.totalTickets
+                ? _c("statistic-card-with-area-chart", {
+                    attrs: {
+                      icon: "UsersIcon",
+                      statistic: _vm.kFormatter(
+                        _vm.data.totalTickets.analyticsData.tickets
+                      ),
+                      "statistic-title": "Total Tickets",
+                      "chart-data": _vm.data.totalTickets.series,
+                    },
+                  })
+                : _vm._e(),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "b-col",
+            { attrs: { lg: "3", sm: "6" } },
+            [
+              _vm.data.closeTickets
                 ? _c("statistic-card-with-area-chart", {
                     attrs: {
                       icon: "PackageIcon",
                       color: "warning",
                       statistic: _vm.kFormatter(
-                        _vm.data.ordersRecevied.analyticsData.orders
+                        _vm.data.closeTickets.analyticsData.tickets
                       ),
-                      "statistic-title": "Orders Received",
-                      "chart-data": _vm.data.ordersRecevied.series,
+                      "statistic-title": "Close Tickets",
+                      "chart-data": _vm.data.closeTickets.series,
                     },
                   })
                 : _vm._e(),
