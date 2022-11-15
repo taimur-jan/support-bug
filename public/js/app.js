@@ -2800,7 +2800,7 @@ vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(portal_vue__WEBPACK_IMPORTED_MOD
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_toastification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-toastification */ "./node_modules/vue-toastification/dist/esm/index.js");
-/* harmony import */ var _core_scss_vue_libs_toastification_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../@core/scss/vue/libs/toastification.scss */ "./resources/js/src/@core/scss/vue/libs/toastification.scss");
+/* harmony import */ var _core_scss_vue_libs_toastification_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @core/scss/vue/libs/toastification.scss */ "./resources/js/src/@core/scss/vue/libs/toastification.scss");
 
 
 
@@ -2906,7 +2906,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/',
     name: 'dashboard',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ "resources_js_src_views_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Dashboard.vue */ "./resources/js/src/views/Dashboard.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_src_views_dashboard_Dashboard_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/dashboard/Dashboard.vue */ "./resources/js/src/views/dashboard/Dashboard.vue"));
     },
     meta: {
       pageTitle: 'Dashboard',
@@ -3172,7 +3172,7 @@ var $themeBreakpoints = {};
 // APP CONFIG
 var $themeConfig = {
   app: {
-    appName: 'Supportbug',
+    appName: 'SupportBug',
     // Will update name in navigation menu (Branding)
     // eslint-disable-next-line global-require
     appLogoImage: __webpack_require__(/*! ./src/assets/images/logo/logo.svg */ "./resources/js/src/assets/images/logo/logo.svg") // Will update logo in navigation menu (Branding)
@@ -56310,7 +56310,7 @@ var version = vue__WEBPACK_IMPORTED_MODULE_0__["default"].version
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -56394,7 +56394,7 @@ var version = vue__WEBPACK_IMPORTED_MODULE_0__["default"].version
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_src_views_Dashboard_vue":1,"resources_js_src_views_CaseHistory_vue":1,"resources_js_src_views_Login_vue":1,"resources_js_src_views_error_Error404_vue":1,"resources_js_src_layouts_vertical_LayoutVertical_vue":1,"resources_js_src_layouts_horizontal_LayoutHorizontal_vue":1,"resources_js_src_layouts_full_LayoutFull_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_src_views_dashboard_Dashboard_vue":1,"resources_js_src_views_CaseHistory_vue":1,"resources_js_src_views_Login_vue":1,"resources_js_src_views_error_Error404_vue":1,"resources_js_src_layouts_vertical_LayoutVertical_vue":1,"resources_js_src_layouts_horizontal_LayoutHorizontal_vue":1,"resources_js_src_layouts_full_LayoutFull_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
