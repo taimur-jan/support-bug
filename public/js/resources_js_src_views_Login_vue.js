@@ -11529,7 +11529,7 @@ var render = function () {
               _c("vuexy-logo"),
               _vm._v(" "),
               _c("h2", { staticClass: "brand-text text-primary ml-1" }, [
-                _vm._v("\n        Vuexy\n      "),
+                _vm._v("\n        SupportBug\n      "),
               ]),
             ],
             1
@@ -11578,7 +11578,7 @@ var render = function () {
                       staticClass: "font-weight-bold mb-1",
                       attrs: { "title-tag": "h2" },
                     },
-                    [_vm._v("\n          Welcome to Vuexy! 👋\n        ")]
+                    [_vm._v("\n          Welcome to SupportBug! 👋\n        ")]
                   ),
                   _vm._v(" "),
                   _c("b-card-text", { staticClass: "mb-2" }, [
