@@ -69,7 +69,7 @@
           <span class="align-middle ml-50">Todo</span>
         </b-dropdown-item>
 
-        <b-dropdown-item :to="{ name: 'apps-chat' }">
+        <b-dropdown-item :to="{ name: 'chat' }">
           <feather-icon
             icon="MessageSquareIcon"
             size="16"

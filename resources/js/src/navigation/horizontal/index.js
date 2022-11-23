@@ -15,6 +15,11 @@ export default [
         icon: 'SearchIcon',
     },
     {
+        title: 'Chat',
+        route: 'chat',
+        icon: 'MessageSquareIcon',
+      },
+    {
         header: 'Pages',
         icon: 'FileIcon',
         children: [

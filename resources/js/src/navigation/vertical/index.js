@@ -14,4 +14,9 @@ export default [
     route: 'knowledge-base',
     icon: 'SearchIcon',
   },
+  {
+    title: 'Chat',
+    route: 'chat',
+    icon: 'MessageSquareIcon',
+  },
 ]

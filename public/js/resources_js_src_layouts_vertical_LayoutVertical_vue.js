@@ -6810,6 +6810,10 @@ __webpack_require__.r(__webpack_exports__);
   title: 'Knowledge Base',
   route: 'knowledge-base',
   icon: 'SearchIcon'
+}, {
+  title: 'Chat',
+  route: 'chat',
+  icon: 'MessageSquareIcon'
 }]);
 
 /***/ }),
@@ -21555,7 +21559,7 @@ var render = function () {
                   _vm._v(" "),
                   _c(
                     "b-dropdown-item",
-                    { attrs: { to: { name: "apps-chat" } } },
+                    { attrs: { to: { name: "chat" } } },
                     [
                       _c("feather-icon", {
                         attrs: { icon: "MessageSquareIcon", size: "16" },
