@@ -7765,7 +7765,7 @@ __webpack_require__.r(__webpack_exports__);
   icon: 'HomeIcon'
 }, {
   title: 'Case History',
-  route: 'support-cases',
+  route: 'cases-list',
   icon: 'TagIcon'
 }, {
   title: 'Knowledge Base',
@@ -7775,6 +7775,10 @@ __webpack_require__.r(__webpack_exports__);
   title: 'Chat',
   route: 'chat',
   icon: 'MessageSquareIcon'
+}, {
+  title: 'User',
+  route: 'users-list',
+  icon: 'UserIcon'
 }]);
 
 /***/ }),

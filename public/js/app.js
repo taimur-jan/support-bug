@@ -2887,11 +2887,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _routes_knowledgebase__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes/knowledgebase */ "./resources/js/src/router/routes/knowledgebase.js");
 /* harmony import */ var _routes_case__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes/case */ "./resources/js/src/router/routes/case.js");
 /* harmony import */ var _routes_chat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes/chat */ "./resources/js/src/router/routes/chat.js");
+/* harmony import */ var _routes_user__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes/user */ "./resources/js/src/router/routes/user.js");
 /* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -2906,8 +2907,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_3__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]);
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
+
+vue__WEBPACK_IMPORTED_MODULE_4__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_5__["default"]({
   mode: 'history',
   base: process.env.BASE_URL,
   scrollBehavior: function scrollBehavior() {
@@ -2929,7 +2931,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
         active: true
       }]
     }
-  }].concat(_toConsumableArray(_routes_case__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_routes_knowledgebase__WEBPACK_IMPORTED_MODULE_0__["default"]), _toConsumableArray(_routes_chat__WEBPACK_IMPORTED_MODULE_2__["default"]), [{
+  }].concat(_toConsumableArray(_routes_case__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_routes_knowledgebase__WEBPACK_IMPORTED_MODULE_0__["default"]), _toConsumableArray(_routes_chat__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_routes_user__WEBPACK_IMPORTED_MODULE_3__["default"]), [{
     path: '/login',
     name: 'login',
     component: function component() {
@@ -2981,16 +2983,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
-  path: '/support-cases',
-  name: 'support-cases',
+  path: '/cases/list',
+  name: 'cases-list',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_src_views_supportcases_Case_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/supportcases/Case.vue */ "./resources/js/src/views/supportcases/Case.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_supportcases_cases-list_CasesList_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/supportcases/cases-list/CasesList.vue */ "./resources/js/src/views/supportcases/cases-list/CasesList.vue"));
   }
 }, {
-  path: '/support-cases/add/',
-  name: 'support-cases-add',
+  path: '/cases/view/:id',
+  name: 'cases-view',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_src_views_supportcases_CaseAdd_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/supportcases/CaseAdd.vue */ "./resources/js/src/views/supportcases/CaseAdd.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_supportcases_cases-view_CasesView_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/supportcases/cases-view/CasesView.vue */ "./resources/js/src/views/supportcases/cases-view/CasesView.vue"));
+  }
+}, {
+  path: '/cases/edit/:id',
+  name: 'cases-edit',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_supportcases_cases-edit_CasesEdit_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/supportcases/cases-edit/CasesEdit.vue */ "./resources/js/src/views/supportcases/cases-edit/CasesEdit.vue"));
   }
 }]);
 
@@ -3081,6 +3089,43 @@ __webpack_require__.r(__webpack_exports__);
       active: true
     }],
     navActiveLink: 'knowledge-base'
+  }
+}]);
+
+/***/ }),
+
+/***/ "./resources/js/src/router/routes/user.js":
+/*!************************************************!*\
+  !*** ./resources/js/src/router/routes/user.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([
+// *===============================================---*
+// *--------- USER ---- ---------------------------------------*
+// *===============================================---*
+{
+  path: '/users/list',
+  name: 'users-list',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_user_users-list_UsersList_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/user/users-list/UsersList.vue */ "./resources/js/src/views/user/users-list/UsersList.vue"));
+  }
+}, {
+  path: '/users/view/:id',
+  name: 'users-view',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_user_users-view_UsersView_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/user/users-view/UsersView.vue */ "./resources/js/src/views/user/users-view/UsersView.vue"));
+  }
+}, {
+  path: '/users/edit/:id',
+  name: 'users-edit',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_src_views_user_users-edit_UsersEdit_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/user/users-edit/UsersEdit.vue */ "./resources/js/src/views/user/users-edit/UsersEdit.vue"));
   }
 }]);
 
@@ -56512,7 +56557,7 @@ var version = vue__WEBPACK_IMPORTED_MODULE_0__["default"].version
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_src_views_dashboard_Dashboard_vue":1,"resources_js_src_views_Login_vue":1,"resources_js_src_views_error_Error404_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBase_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBaseCategory_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBaseCategoryQuestion_vue":1,"resources_js_src_views_supportcases_Case_vue":1,"resources_js_src_views_supportcases_CaseAdd_vue":1,"resources_js_src_views_chat_Chat_vue":1,"resources_js_src_layouts_vertical_LayoutVertical_vue":1,"resources_js_src_layouts_horizontal_LayoutHorizontal_vue":1,"resources_js_src_layouts_full_LayoutFull_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_src_views_dashboard_Dashboard_vue":1,"resources_js_src_views_Login_vue":1,"resources_js_src_views_error_Error404_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBase_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBaseCategory_vue":1,"resources_js_src_views_knowledgebase_KnowledgeBaseCategoryQuestion_vue":1,"resources_js_src_views_supportcases_cases-list_CasesList_vue":1,"resources_js_src_views_supportcases_cases-view_CasesView_vue":1,"resources_js_src_views_supportcases_cases-edit_CasesEdit_vue":1,"resources_js_src_views_chat_Chat_vue":1,"resources_js_src_views_user_users-list_UsersList_vue":1,"resources_js_src_views_user_users-view_UsersView_vue":1,"resources_js_src_views_user_users-edit_UsersEdit_vue":1,"resources_js_src_layouts_vertical_LayoutVertical_vue":1,"resources_js_src_layouts_horizontal_LayoutHorizontal_vue":1,"resources_js_src_layouts_full_LayoutFull_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

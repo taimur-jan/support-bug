@@ -6,7 +6,7 @@ export default [
   },
   {
     title: 'Case History',
-    route: 'support-cases',
+    route: 'cases-list',
     icon: 'TagIcon',
   },
   {
@@ -18,5 +18,10 @@ export default [
     title: 'Chat',
     route: 'chat',
     icon: 'MessageSquareIcon',
+  },
+  {
+    title: 'User',
+    route: 'users-list',
+    icon: 'UserIcon',
   },
 ]

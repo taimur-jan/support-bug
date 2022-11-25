@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 import kb from './routes/knowledgebase'
 import cases from './routes/case'
 import chat from './routes/chat'
+import users from './routes/user'
 
 
 Vue.use(VueRouter)
@@ -34,6 +35,7 @@ const router = new VueRouter({
     ...cases,
     ...kb,
     ...chat,
+    ...users,
     {
       path: '/login',
       name: 'login',
