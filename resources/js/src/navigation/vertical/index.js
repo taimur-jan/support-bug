@@ -24,4 +24,22 @@ export default [
     route: 'users-list',
     icon: 'UserIcon',
   },
+  {
+    title: 'Asset Management',
+    icon: 'ArchiveIcon',
+    children: [
+      {
+        title: 'Asset Category',
+        route: 'assets-list',
+      },
+      {
+        title: 'Asset SubCategory',
+        route: 'assets-list',
+      },
+      {
+        title: 'Asset SubSubCategory',
+        route: 'assets-list',
+      },
+    ],
+  },
 ]

@@ -7,6 +7,7 @@ import kb from './routes/knowledgebase'
 import cases from './routes/case'
 import chat from './routes/chat'
 import users from './routes/user'
+import assetmanager from './routes/assetmanager'
 
 
 Vue.use(VueRouter)
@@ -36,6 +37,7 @@ const router = new VueRouter({
     ...kb,
     ...chat,
     ...users,
+    ...assetmanager,
     {
       path: '/login',
       name: 'login',

@@ -6818,6 +6818,19 @@ __webpack_require__.r(__webpack_exports__);
   title: 'User',
   route: 'users-list',
   icon: 'UserIcon'
+}, {
+  title: 'Asset Management',
+  icon: 'ArchiveIcon',
+  children: [{
+    title: 'Asset Category',
+    route: 'assets-list'
+  }, {
+    title: 'Asset SubCategory',
+    route: 'assets-list'
+  }, {
+    title: 'Asset SubSubCategory',
+    route: 'assets-list'
+  }]
 }]);
 
 /***/ }),
