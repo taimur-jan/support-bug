@@ -6,6 +6,9 @@ export default[
     path: '/assets/list',
     name: 'assets-list',
     component: () => import('@/views/assetmanager/assetsList.vue'),
+    meta: {
+        middleware:"auth",
+    },
   },
 //   {
 //     path: '/assets/view/:id',

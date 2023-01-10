@@ -10,8 +10,13 @@ import App from '@/App.vue'
 import '@/global-components'
 
 // 3rd party plugins
+import '@axios'
 import '@/libs/portal-vue'
 import '@/libs/toastification'
+
+window.axios = require('axios').default
+//To send authentication cookie along every request
+window.axios.defaults.withCredentials = true
 
 // BSV Plugin Registration
 Vue.use(ToastPlugin)

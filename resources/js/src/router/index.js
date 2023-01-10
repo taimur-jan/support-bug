@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '../store'
 
 
 //routes
@@ -8,7 +9,7 @@ import cases from './routes/case'
 import chat from './routes/chat'
 import users from './routes/user'
 import assetmanager from './routes/assetmanager'
-
+import auth from './routes/auth'
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,7 @@ const router = new VueRouter({
       name: 'dashboard',
       component: () => import('@/views/dashboard/Dashboard.vue'),
       meta: {
+        middleware:"auth",
         pageTitle: 'Dashboard',
         breadcrumb: [
           {
@@ -38,14 +40,7 @@ const router = new VueRouter({
     ...chat,
     ...users,
     ...assetmanager,
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import('@/views/Login.vue'),
-      meta: {
-        layout: 'full',
-      },
-    },
+    ...auth,
     {
       path: '/error-404',
       name: 'error-404',
@@ -63,8 +58,18 @@ const router = new VueRouter({
 
 router.beforeEach((toRoute, fromRoute, next) => {
     window.document.title = toRoute.meta && toRoute.meta.pageTitle ? toRoute.meta.pageTitle : 'Supportbug';
-
-    next();
+    if(toRoute.meta.middleware=="guest"){
+        if(store.state.auth.authenticated){
+            next({name:"dashboard"})
+        }
+        next()
+    }else{
+        if(store.state.auth.authenticated){
+            next()
+        }else{
+            next({name:"login"})
+        }
+    }
   })
 // ? For splash screen
 // Remove afterEach hook if you are not using splash screen

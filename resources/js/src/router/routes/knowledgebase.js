@@ -4,6 +4,7 @@ export default [
         name: 'knowledge-base',
         component: () => import('@/views/knowledgebase/KnowledgeBase.vue'),
         meta: {
+            middleware:"auth",
             pageTitle: 'Knowledge Base',
             breadcrumb: [
                 {
@@ -18,6 +19,7 @@ export default [
         name: 'knowledge-base-category',
         component: () => import('@/views/knowledgebase/KnowledgeBaseCategory.vue'),
         meta: {
+            middleware:"auth",
             pageTitle: 'Category',
             breadcrumb: [
                 {
@@ -37,6 +39,7 @@ export default [
         name: 'knowledge-base-question',
         component: () => import('@/views/knowledgebase/KnowledgeBaseCategoryQuestion.vue'),
         meta: {
+            middleware:"auth",
             pageTitle: 'Question',
             breadcrumb: [
                 {
